@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Overpass', sans-serif;
+  background-color: var(--very-dark-blue);
+  padding: 20px;
+}
+.cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.page {
+  width: 100%;
+  max-width: 410px;
+  background: linear-gradient(
+    180deg,
+    hsl(215, 20%, 17%) 0%,
+    hsl(216, 24%, 12%) 100%
+  );
+  border-radius: 28px;
+  padding: 32px;
+  display: none;
+}
+.page.elementon {
+  display: block;
+}
+.starbox {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+h1,
+h2 {
+  color: var(--white);
+  font-size: 2rem;
+  margin-bottom: 14px;
+}
+.desc,
+.thxtext {
+  color: var(--light-grey);
+  line-height: 1.7;
+  font-size: 15px;
+}
+.ratings {
+  display: flex;
+  justify-content: space-between;
+  margin: 28px 0 32px;
+}
+.ratingbtn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255,255,255,0.06);
+  color: var(--light-grey);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.ratingbtn:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+.ratingbtn.elementon {
+  background-color: var(--medium-grey);
+  color: var(--white);
+}
+.submitbtn {
+  width: 100%;
+  border: none;
+
+  background-color: var(--orange);
+
+  color: var(--very-dark-blue);
+
+  padding: 15px;
+
+  border-radius: 30px;
+
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+.submitbtn:hover {
+  background-color: var(--white);
+}
+.endcard {
+  text-align: center;
+}
+.thximg {
+  width: 160px;
+  margin: 0 auto 32px;
+}
+.selrating {
+  display: inline-block;
+
+  background-color: rgba(255,255,255,0.05);
+
+  color: var(--orange);
+
+  padding: 10px 18px;
+
+  border-radius: 30px;
+
+  margin-bottom: 36px;
+
+  font-size: 15px;
+}
+.thxtext {
+  max-width: 320px;
+  margin: 0 auto;
+}
+@media (max-width: 480px) {
+  .page {
+    padding: 24px;
+    border-radius: 20px;
+  }
+  h1,
+  h2 {
+    font-size: 1.8rem;
+  }
+  .ratingbtn {
+    width: 45px;
+    height: 45px;
+  }
+  .ratings {
+    gap: 10px;
+  }
+  .thximg {
+    width: 140px;
+  }
+}

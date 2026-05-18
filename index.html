@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Rating Component</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link  href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="cont">
+    <section class="page ratingcardmain elementon">
+      <div class="starbox"> <img src="icon-star.svg" alt="star icon"> </div>
+      <h1>How did we do?</h1>
+      <p class="desc">
+        Please let us know how we did with your support request.
+        All feedback is appreciated to help us improve our offering!
+      </p>
+      <div class="ratings">
+        <button class="ratingbtn">1</button>
+        <button class="ratingbtn">2</button>
+        <button class="ratingbtn">3</button>
+        <button class="ratingbtn">4</button>
+        <button class="ratingbtn">5</button>
+      </div>
+      <button class="submitbtn">
+        SUBMIT
+      </button>
+    </section>
+    <section class="page endcard">
+      <img src="illustration-thank-you.svg"alt="thank you illustration" class="thximg">
+      <div class="selrating">
+        You selected <span id="selected-value">0</span> out of 5
+      </div>
+      <h2>Thank you!</h2>
+      <p class="thxtext">
+        We appreciate you taking the time to give a rating.
+        If you ever need more support, don’t hesitate to get in touch!
+      </p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
