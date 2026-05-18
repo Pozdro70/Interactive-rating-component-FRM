@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --orange: hsl(25, 97%, 53%);
   --white: hsl(0, 0%, 100%);
@@ -11,6 +12,7 @@
   --dark-blue: hsl(213, 19%, 18%);
   --very-dark-blue: hsl(216, 12%, 8%);
 }
+
 body {
   min-height: 100vh;
   display: flex;
@@ -20,121 +22,125 @@ body {
   background-color: var(--very-dark-blue);
   padding: 1.25em;
 }
+
 .cont {
   width: 100%;
   display: flex;
   justify-content: center;
 }
+
 .page {
   width: 100%;
-  max-width: 410px;
+  max-width: 25.625em;
   background: linear-gradient(
     180deg,
     hsl(215, 20%, 17%) 0%,
     hsl(216, 24%, 12%) 100%
   );
-  border-radius: 28px;
-  padding: 32px;
+  border-radius: 1.75em;
+  padding: 2em;
   display: none;
 }
+
 .page.elementon {
   display: block;
 }
+
 .starbox {
-  width: 48px;
-  height: 48px;
+  width: 3em;
+  height: 3em;
   border-radius: 50%;
   background-color: rgba(255,255,255,0.05);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 2em;
 }
+
 h1,
 h2 {
   color: var(--white);
-  font-size: 2rem;
-  margin-bottom: 14px;
+  font-size: 2em;
+  margin-bottom: 0.875em;
 }
+
 .desc,
 .thxtext {
   color: var(--light-grey);
   line-height: 1.7;
-  font-size: 15px;
+  font-size: 0.9375em;
 }
+
 .ratings {
   display: flex;
   justify-content: space-between;
-  margin: 28px 0 32px;
+  margin: 1.75em 0 2em;
 }
+
 .ratingbtn {
-  width: 52px;
-  height: 52px;
+  width: 3.25em;
+  height: 3.25em;
   border-radius: 50%;
   border: none;
   background-color: rgba(255,255,255,0.06);
   color: var(--light-grey);
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 700;
   cursor: pointer;
   transition: 0.25s;
 }
+
 .ratingbtn:hover {
   background-color: var(--orange);
   color: var(--white);
 }
+
 .ratingbtn.elementon {
   background-color: var(--medium-grey);
   color: var(--white);
 }
+
 .submitbtn {
   width: 100%;
   border: none;
-
   background-color: var(--orange);
-
   color: var(--very-dark-blue);
-
-  padding: 15px;
-
-  border-radius: 30px;
-
+  padding: 0.9375em;
+  border-radius: 1.875em;
   font-weight: 700;
-  letter-spacing: 3px;
-
+  letter-spacing: 0.1875em;
   cursor: pointer;
-
   transition: 0.25s;
 }
+
 .submitbtn:hover {
   background-color: var(--white);
 }
+
 .endcard {
   text-align: center;
 }
+
 .thximg {
-  width: 160px;
-  margin: 0 auto 32px;
+  width: 10em;
+  margin: 0 auto 2em;
 }
+
 .selrating {
   display: inline-block;
-
   background-color: rgba(255,255,255,0.05);
-
   color: var(--orange);
-
-  padding: 10px 18px;
-
-  border-radius: 30px;
-
-  margin-bottom: 36px;
-
-  font-size: 15px;
+  padding: 0.625em 1.125em;
+  border-radius: 1.875em;
+  margin-bottom: 2.25em;
+  font-size: 0.9375em;
 }
+
 .thxtext {
-  max-width: 320px;
+  max-width: 20em;
   margin: 0 auto;
 }
+
 @media (max-width: 30em) {
   .page {
     padding: 1.5em;
